@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Погода</title>
+</head>
+<body>
+    <div class="weather_form">
+        <h1>Получить информацию о погоде</h1>
+        <form id="form">
+            <input type="text" id="townInput" placeholder="Город" required>
+            <button type="submit">Получить погоду</button>
+        </form>
+    </div>
+    <div id="overlay" class="overlay">
+        <div id="weatherInfo" class="weather_info">
+            <h2>Погода в <span id="cityName"></span></h2>
+            <img src="" alt="Иконка погоды" class="weather_icon">
+            <p>Температура: <span id="temperature"></span>°C</p>
+            <p>Ощущается как: <span id="feelsLike"></span>°C</p>
+            <p>Погода: <span id="weatherDescription"></span></p>
+            <p>Влажность: <span id="humidity"></span>%</p>
+            <p>Ветер: <span id="windSpeed"></span> м/с</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
